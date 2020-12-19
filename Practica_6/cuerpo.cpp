@@ -41,7 +41,6 @@ void cuerpo::acelerar(float px2_, float py2_, float mass2)
     radio = sqrt((pow((px2_-PX),2)+pow((py2_-PY),2)));
     AX += G*mass2*(px2_-PX)/pow(radio,3);
     AY += G*mass2*(py2_-PY)/pow(radio,3);
-
 }
 
 void cuerpo::actualizar(float dt)

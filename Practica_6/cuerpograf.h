@@ -5,6 +5,12 @@
 #include <QGraphicsItem>
 #include <QGraphicsScene>
 #include "cuerpo.h"
+#include <fstream>
+#include <string>
+#include <string.h>
+
+
+using namespace std;
 
 class cuerpograf: public QGraphicsItem
 {
@@ -14,6 +20,7 @@ public:
     void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget);
     void setEscala(float s);
     void actualizar(float dt);
+    void guardar_datos(string datos);
     cuerpo* getEsf();
 
 private:
